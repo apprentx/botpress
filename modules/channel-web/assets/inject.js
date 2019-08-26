@@ -28,7 +28,7 @@ function init(config) {
   const cssHref = host + '/assets/modules/channel-web/inject.css'
   injectDOMElement('link', 'head', { rel: 'stylesheet', href: cssHref })
   const options = encodeURIComponent(JSON.stringify({ config: config }))
-  let iframeSrc = host + '/lite/' + botId + '/?m=channel-web&v=Embedded&options=' + options
+  let iframeSrc = host + '/lite/' + botId + '/?m=channel-web&v=Fullscreen&options=' + options
   if (config.ref) {
     iframeSrc += '&ref=' + encodeURIComponent(config.ref)
   }
