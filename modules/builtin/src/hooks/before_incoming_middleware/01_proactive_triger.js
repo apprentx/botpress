@@ -10,7 +10,7 @@ if (event.type === 'proactive-trigger') {
   event.setFlag(bp.IO.WellKnownFlags.SKIP_DIALOG_ENGINE, true)
 
   // Make the bot respond with custom content instead
-  bp.cms.renderElement('builtin_text', { text: "I'm so proactive!", typing: true }, eventDestination).then(payloads => {
+  bp.cms.renderElement('builtin_text', { text: event.payload.payload.payload.text,, typing: true }, eventDestination).then(payloads => {
     bp.events.replyToEvent(event, payloads)
   })
 }
