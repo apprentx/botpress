@@ -2,7 +2,7 @@
 
 ## Apprentx
 
-To deploy the new changes, `yarn build` then `yarn start`
+To deploy the new changes, `yarn`, `yarn build`. To start the server: `yarn start`
 
 # [Botpress](https://botpress.io) — The open-source bot platform
 
