@@ -11,7 +11,7 @@
   "license": "AGPL-3.0",
   "private": true,
   "scripts": {
-    "start": "cd ./out/bp && cross-env EXTERNAL_URL=https://botpress.apprentx.rocks NODE_PATH=./ cross-env BP_MODULES_PATH=../../modules:../../internal-modules node index.js",
+    "start": "cd ./out/bp && cross-env EXTERNAL_URL=https://botpress.apprentx.rocks NODE_PATH=./ cross-env BP_MODULES_PATH=../../modules:../../internal-modules node index.js -p",
     "cmd": "yarn run gulp",
     "build": "yarn cmd build",
     "watch": "yarn cmd watch",
